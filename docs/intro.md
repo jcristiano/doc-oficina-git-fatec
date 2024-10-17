@@ -25,4 +25,6 @@ Vamos começar clonando um repositório do GitHub. O comando abaixo permite que 
 git clone https://github.com/jcristiano/fatec-ex-poke-api.git
 ```
 
-Link do repositório [PokeAPI](https://github.com/jcristiano/fatec-ex-poke-api.git)
+Link do repositório [PokeAPI-Repo](https://github.com/jcristiano/fatec-ex-poke-api.git)
+
+Link da página em execução [PokeAPI-ghPages](https://jcristiano.github.io/fatec-ex-poke-api/)
