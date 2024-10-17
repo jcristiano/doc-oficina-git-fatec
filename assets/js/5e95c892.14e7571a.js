@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_oficina_git_fatec=self.webpackChunkdoc_oficina_git_fatec||[]).push([[9647],{7121:(e,c,a)=>{a.r(c),a.d(c,{default:()=>f});a(6540);var s=a(4164),r=a(1213),t=a(7559),i=a(2831),n=a(781),u=a(4848);function f(e){return(0,u.jsx)(r.e3,{className:(0,s.A)(t.G.wrapper.docsPages),children:(0,u.jsx)(n.A,{children:(0,i.v)(e.route.routes)})})}}}]);

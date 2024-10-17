@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_oficina_git_fatec=self.webpackChunkdoc_oficina_git_fatec||[]).push([[5742],{7093:c=>{c.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

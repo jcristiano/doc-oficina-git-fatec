@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_oficina_git_fatec=self.webpackChunkdoc_oficina_git_fatec||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/doc-oficina-git-fatec/blog","blogTitle":"Blog","authorsListPath":"/doc-oficina-git-fatec/blog/authors"}')}}]);

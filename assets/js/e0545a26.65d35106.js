@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_oficina_git_fatec=self.webpackChunkdoc_oficina_git_fatec||[]).push([[9553],{8141:t=>{t.exports=JSON.parse('{"metadata":{"permalink":"/doc-oficina-git-fatec/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
