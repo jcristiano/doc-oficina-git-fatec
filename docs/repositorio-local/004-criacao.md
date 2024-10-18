@@ -17,6 +17,11 @@ mkdir controle-biblioteca
 cd controle-biblioteca
 ```
 
+### Definindo o nome do nosso branch principal
+
+```bash
+git config --global init.defaultBranch main
+```
 
 ### Iniciando o versionamento
 
