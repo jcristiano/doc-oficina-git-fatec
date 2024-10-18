@@ -33,10 +33,7 @@ npm init -y
 ### Adicionando as nossas dependências
 
 ```bash
-npm install gulp gulp-sass sass \
-    gulp-typescript gulp-pug gulp-uglify \
-    gulp-clean-css gulp-terser \
-    browser-sync gulp-htmlmin --save-dev
+npm install gulp gulp-sass sass gulp-typescript gulp-pug gulp-uglify gulp-clean-css gulp-terser browser-sync gulp-htmlmin --save-dev
 ```
 
 ### Criando nosso arquivo gulpfiles
