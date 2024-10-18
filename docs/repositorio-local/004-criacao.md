@@ -126,20 +126,138 @@ exports.default = build;
 <details>
   <summary>Clique aqui para ver o código SCSS</summary>
   ```css title="./src/styles/main.scss"
-$primary-color: #3498db;
+$red: #d32f2f;
+$black: #000;
+$white: #fff;
+$gray: #f5f5f5;
+$light-gray: #e0e0e0;
 
 body {
-    background-color: $primary-color;
-    font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $gray;
+  color: $black;
 }
+
+.navbar {
+  background-color: $light-gray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  .logo img {
+    width: 100px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: $black;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+.hero {
+  background-color: $red;
+  color: $white;
+  text-align: center;
+  padding: 80px 20px;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .btn-primary {
+    background-color: $black;
+    color: $white;
+    padding: 15px 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+.features,
+.about,
+.contact {
+  background-color: $white;
+  padding: 50px 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      color: $red;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .feature-box {
+      margin: 20px;
+
+      i {
+        font-size: 50px;
+        color: $black;
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  padding: 20px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
   ```
 </details>
 
 <details>
   <summary>Clique aqui para ver o código TypeScript</summary>
   ```typescript title="./src/scripts/app.ts"
-const greeting: string = "Hello, Gulp!";
-console.log(greeting);
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector(".navbar nav");
+    const toggleNav = () => nav?.classList.toggle("active");
+
+    document.querySelector(".navbar")?.addEventListener("click", toggleNav);
+    
+});
   ```  
 </details>
 
@@ -147,12 +265,61 @@ console.log(greeting);
   <summary>Clique aqui para ver o código PUG</summary>
   ```text title="./src/templates/index.pug"
 doctype html
-html
+html(lang="pt-BR")
   head
-    title Gulp Project
+    title Sistema de Gestão da Biblioteca | Fatec Taubaté
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/main.css")
+
+
   body
-    h1 Semana da Tecnologia Fatec Taubaté
-    p This is a template generated with Pug.
+    header.navbar
+      .logo
+        img(src="https://jcristiano.github.io/doc-oficina-git-fatec/img/fatec_logo.png", alt="Logo Fatec Taubaté")
+      nav
+        ul
+          li: a(href="#features") Funcionalidades
+          li: a(href="#about") Sobre
+          li: a(href="#contact") Contato
+
+    section.hero
+      .container
+        h1 Sistema de Gestão da Biblioteca
+        p A solução completa para o gerenciamento da sua biblioteca.
+        a.btn.btn-primary(href="#features") Explore as funcionalidades
+
+    section#features.features
+      .container
+        h2 Funcionalidades
+        .feature-box
+          i.icon-book
+          h3 Gestão de Livros
+          p Controle total sobre o acervo da biblioteca.
+        .feature-box
+          i.icon-user
+          h3 Controle de Usuários
+          p Gestão eficiente de alunos e professores.
+        .feature-box
+          i.icon-calendar
+          h3 Empréstimos e Devoluções
+          p Sistema de empréstimos ágil e fácil.
+
+    section#about.about
+      .container
+        h2 Sobre
+        p O Sistema de Gestão da Biblioteca da Fatec Taubaté foi desenvolvido para atender as necessidades de gerenciamento de bibliotecas acadêmicas com tecnologia avançada e acessível.
+
+    section#contact.contact
+      .container
+        h2 Contato
+        p Para mais informações, entre em contato pelo e-mail: contato@fatectaubate.edu.br
+
+    footer
+      .container
+        p &copy; 2024 Fatec Taubaté. Todos os direitos reservados.
+    script(src="scripts/main.js")
+
 
   ```  
 </details>
