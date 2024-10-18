@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Semana da Gestão e Tecnologia',
+  title: 'Simpósio de Tecnologia e Gestão',
   tagline: 'Oficina Git GitHub',
   favicon: 'img/favicon.ico',
 
@@ -78,7 +78,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Oficina',
         },
         {
           href: 'https://github.com/jcristiano/doc-oficina-git-fatec',
